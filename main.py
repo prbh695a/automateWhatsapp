@@ -4,7 +4,7 @@ from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
 from pymongo import MongoClient
 
-cluster = MongoClient("mongodb+srv://prateek:prateek@cluster0.n9qty.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+cluster = MongoClient("URI")
 db = cluster["bakery"]
 users = db["users"]
 orders = db["orders"]
